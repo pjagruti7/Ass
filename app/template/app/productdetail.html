@@ -1,0 +1,24 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Product Detail{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+ <div class="row">
+  <div class="col-sm-6 text-center align-self-center">
+   <img src="{{product.product_image.url}}" alt="" class="img-fluid">
+  </div>
+  <div class="col-sm-5 offset-sm-1">
+   <h2>{{product.title}}</h2>
+   <hr>
+   <p>Product Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. nulla quisquam!</p> <br>
+   <h4>Rs. {{product.price}} </h4> <br>
+   
+   <h5 class="mt-5">Available Offers</h5>
+   <ul>
+    <li>Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit</li>
+    <li>Special Price Get extra ₹3000 off (price inclusive of discount)</li>
+    </ul>
+  </div>
+ </div>
+</div>
+{% endblock main-content %}
